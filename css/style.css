@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; color: #222;}
+
+header {width: 200px; height: 850px; float: left;}
+header h1 {width: 200px; height: 40px; margin: 30px 0;}
+header .gnb {width: 180px; height: 200px; background: #0660da; margin: 0 auto;}
+header .gnb li {height: 50px; line-height: 50px; text-align: center; font-size: 20px;}
+header .gnb li:hover {background: #0c4ba0;}
+header .gnb li a {color: #fff; display: block;}
+header .gnb li .lnb {height: 50px; width: 0; position: absolute; background: rgba(0, 188, 228, 0.9); left: 190px; top: 100px; z-index: 10; overflow: hidden; transition: 0.3s;}
+header .gnb:hover li .lnb {width: calc(100% - 190px)}
+
+header .gnb li .lnb li {float: left; font-size: 18px; }
+header .gnb li .lnb li a {padding: 0 20px;}
+
+header .gnb li:nth-child(2) .lnb {top:150px}
+header .gnb li:nth-child(3) .lnb {top:200px}
+header .gnb li:nth-child(4) .lnb {top:250px}
+
+
+
+header .spot {height: 50px; border: 1px solid #000;margin: 0 auto; margin-top: 50px; width: 180px; }
+header .spot a {float: left; width: 49%; text-align: center; line-height: 50px;}
+header .spot a:nth-child(1) {border-right: 1px solid #555;}
+
+
+
+
+
+section {width: calc(100% - 200px); height: 850px; float: left; }
+.fade {width: 100%; height: 400px; background: #000; position: relative;}
+.fade ul {width: 100%;}
+.fade li {width: 100%; height: 400px; position: absolute; display: none;}
+
+.fade .baro {position: absolute; width: 150px; height: 330px; background: #0660da; right: 0; top: 0;}
+.fade .baro a {display: block; border-bottom: 1px solid #fff; height: 109px; text-align: center;}
+.fade .baro a img {width: 50px; margin-top: 15px;}
+.fade .baro a div {color: #fff; font-size: 20px;}
+
+
+.banner {width: 100%; height: 200px; padding-top: 20px; box-sizing: border-box; padding-right: 20px;}
+.banner_box {height: 160px; background: #e0e7f0; }
+.banner_box .icon {float: left; width: 80px; margin: 30px;}
+.banner_box .text {float: left; width: 70%; height: 100px; margin-top: 30px;}
+.banner_box .text h2 {font-size: 30px; color: #0660da; margin-bottom: 10px;}
+.banner_box .text p {font-size: 18px;}
+.banner_box .arrow {float: right; margin: 40px;}
+
+
+.board {width: 100%; height: 250px; }
+.board .title_box {height: 60px; }
+.board .title_box h2 {width: 130px; height: 60px; line-height: 60px; font-size: 20px; text-align: center; float: left; background: #eee;}
+.board .title_box h2.on {background: #0660da;}
+.board .title_box h2.on a {color: #fff;}
+
+.board .content_box {height: 190px; }
+
+.notice {}
+.notice li {height: 40px; line-height: 40px; border-bottom: 1px solid #ccc;}
+.notice li .title {width: 80%; height: 40px; float: left; }
+.notice li .date {width: 18%; height: 40px; float: right; }
+
+.gallery {display: none;}
+.gallery li {width: 230px; height: 150px; float: left; margin-right: 50px; margin-top: 20px;}
+.gallery li img {width: 100%;}
+
+
+
+footer {width: 100%; height: 120px; float: left; background: #0660da;}
+footer h1 {float: left; margin-top: 30px;}
+footer .info {float: left; width: 800px; height: 120px; }
+footer .info .menu {height: 40px; line-height: 40px;}
+footer .info .menu a {color: #fff; font-size: 15px; padding: 0 20px;}
+footer .info .address {color: #fff; font-size: 15px;}
+
+
+/* popup */
+.popup {position: absolute; width: 400px; height: 300px; background: #0660da; top: 200px; left: 40%; z-index: 20; padding: 20px; display: none;}
+.popup h2 {font-size: 30px; color: #fff; margin-bottom: 20px;}
+.popup div {font-size: 20px; color: #fff;}
+.popup a {position: absolute; background: #fff; right: 20px; bottom: 20px; padding: 20px 30px;}
